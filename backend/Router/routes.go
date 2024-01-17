@@ -18,11 +18,11 @@ func Initalize(app *fiber.App){
 	}))
 
 	v1.Post("/user", Handler.User) 
-    v1.Post("/login", Handler.Login)
-    v1.Post("/register", Handler.Register)
+    	v1.Post("/login", Handler.Login)
+    	v1.Post("/register", Handler.Register)
 
 	blog.Post("/add", Handler.BlogAdd)
-    blog.Post("/view", Handler.BlogViews)
+    	blog.Post("/view", Handler.BlogViews)
 	blog.Post("/list", Handler.BlogList)
 	blog.Post("/del", Handler.BlogDel)
 
